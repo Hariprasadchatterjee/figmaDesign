@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* 1. Define Local Font Faces */
+@font-face {
+  font-family: 'Gerbil';
+  src: url('/fonts/gerbil.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 100 900; /* Satoshi is variable, so we support the full range */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Tell Tailwind about the new fonts (Tailwind v4 style) */
+@theme {
+  --font-satoshi: "Satoshi", "Space Grotesk", sans-serif;
+  --font-gerbil: "Gerbil", sans-serif;
+}
+
+/* 3. Set Global Defaults */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-black antialiased;
+    /* This makes Satoshi the default font for the whole site */
+    font-family: var(--font-satoshi);
+  }
+}
