@@ -16,7 +16,7 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-x-8 text-sm font-medium">
           {navLinks.map(link => (
-            <a key={link} href="#" className="text-gray-700 hover:text-dark transition">
+            <a key={link} href={`#${link}`} className="text-gray-700 hover:text-dark transition">
               {link}
             </a>
           ))}

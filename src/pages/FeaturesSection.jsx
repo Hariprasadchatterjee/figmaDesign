@@ -17,13 +17,13 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section id="Services" className="relative w-full py-24 px-6 md:px-20  ">
+    <section id="Services" className="relative w-full py-24 px-6 md:px-20 lg:mt-40 ">
       
-<div className="absolute top-0 right-0 w-full lg:w-1/2 h-full pointer-events-none z-0 overflow-visible">
+<div className="absolute -top-25 right-0 w-full lg:w-1/2 h-full pointer-events-none z-0 overflow-visible">
   <img 
     src="/projects/Vector 2516 (1).png" 
     alt="" 
-    className="hidden lg:block w-full h-auto object-contain object-top lg:-translate-y-[15%] xl:-translate-y-[25%] 2xl:-translate-y-[35%]"
+    className="hidden lg:block w-full h-auto object-contain object-top lg:-translate-y-[25%] xl:-translate-y-[25%] 2xl:-translate-y-[35%]"
   />
 </div>
 
